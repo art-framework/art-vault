@@ -1,4 +1,4 @@
-package io.artframework.template;
+package io.artframework.modules.vault;
 
 import io.artframework.Scope;
 import io.artframework.annotations.ArtModule;
@@ -8,18 +8,16 @@ import io.artframework.annotations.OnLoad;
 import io.artframework.annotations.OnReload;
 
 @ArtModule(
-    value = "art-module-template",
-    description = "Add a short and precise description about your module here.",
+    value = "art-vault",
+    description = "Adds actions, requirements and trigger for the Vault plugin.",
     version = "@VERSION@",
-    prefix = "art-template",
+    prefix = "vault",
     depends = {
-        // add any plugin or module dependencies of your module here
-        // "plugin:Vault"
-        // "module:custom-parser"
+         "plugin:Vault"
     }
 )
-public class TemplateModule {
-    
+public class VaultModule {
+
     @OnLoad
     public void onLoad(Scope scope) {
 
