@@ -57,7 +57,7 @@ dependencies {
     implementation spigot(mcVersion)
 
     implementation 'io.art-framework.art-framework:api:4.4.0'
-    implementation 'de.raidcraft.economy:wrapper:2.3.2'
+    implementation 'de.raidcraft.economy:wrapper:2.3.6'
 
     //Test dependencies
     testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
